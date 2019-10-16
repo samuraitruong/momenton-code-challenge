@@ -3,12 +3,12 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 10vmin;
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,4 +19,21 @@
 
 .App-link {
   color: #09d3ac;
+}
+.App-content{
+  padding: 3em 20em;
+}
+.Org-Chart{
+  width: 60%;
+  border: 1px;
+  border-collapse: collapse;
+}
+.Org-Chart td{
+  border: solid 1px #ccc;
+  padding:5px ;
+}
+.Buttons button{
+  padding:5px 10px;
+  margin:5px;
+  cursor: pointer;
 }
