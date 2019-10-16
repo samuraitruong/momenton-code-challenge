@@ -9,7 +9,7 @@
         "id": 220,
         "managerId":100
     },{
-        "name": "Jamie1",
+        "name": "Jamie CEO",
         "id": 150
     },
     {
@@ -29,6 +29,12 @@
     },
     {
         "name": "Jonathan",
-        "id": 230
+        "id": 230,
+        "managerId":400
+    },
+    {
+        "name": "Employee with Invalid Manager",
+        "id": 233,
+        "managerId":40000
     }
 ]

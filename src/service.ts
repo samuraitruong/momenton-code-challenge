@@ -22,18 +22,22 @@ export class EmployeeService {
     const ceo = employees.filter(x => !x.managerId);
 
     if (ceo && ceo.length > 1) {
-      throw new Error("Invalid data: Multiple CEO found");
+      throw new Error("Multiple employee has no manager");
     }
 
     const dict: { [x: number]: IHierarchyItem<IEmployee> } = {};
-    // using dictionary to store reference data, this is fastest way to process data
+    // Should we care about data with duplicate employee Id, 
+    // Using dictionary to store reference data, this is fastest way to process data
+    // With this method if there is an employee with invalid manager ID, it will automatically excluded from the Hierarchy , seem sample 4
     for (const item of employees) {
       if (!dict[item.id]) {
+        
         dict[item.id] = {
           current: item,
           children: []
         };
       } else {
+        // if we care about validate duplicate ID, we should implement it here by check dict[item.id].current  != null
         dict[item.id].current = item;
       }
 

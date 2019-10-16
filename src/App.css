@@ -20,20 +20,26 @@
 .App-link {
   color: #09d3ac;
 }
-.App-content{
+.App-content {
   padding: 3em 20em;
 }
-.Org-Chart{
+.Org-Chart {
   width: 60%;
   border: 1px;
   border-collapse: collapse;
 }
-.Org-Chart td{
+.Org-Chart td {
   border: solid 1px #ccc;
-  padding:5px ;
+  padding: 5px;
 }
-.Buttons button{
-  padding:5px 10px;
-  margin:5px;
+.Buttons button {
+  padding: 5px 10px;
+  margin: 5px;
   cursor: pointer;
+}
+.Error {
+  padding: 20px;
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
 }
