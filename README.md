@@ -2,6 +2,7 @@
 Below is employee data of a small company.
 It represents the hierarchical relationship among employees. CEO of the company doesn't
 have a manager.
+
 | EmployeeName | id  | Manager Id |
 |--------------|-----|------------|
 | Alan         | 100 | 150        |
