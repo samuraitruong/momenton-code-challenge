@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "646048ba08ac4be398116280ce613c2a",
+    "revision": "bfcc6ebedfb98716690c97b9508286a8",
     "url": "/momenton-code-challenge/index.html"
   },
   {
-    "revision": "eea06e13dd4c78b90f4f",
+    "revision": "18221ba73b234fb039b0",
     "url": "/momenton-code-challenge/static/css/main.ae179a33.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/momenton-code-challenge/static/js/2.d4ad94f8.chunk.js"
   },
   {
-    "revision": "eea06e13dd4c78b90f4f",
-    "url": "/momenton-code-challenge/static/js/main.0129f96a.chunk.js"
+    "revision": "18221ba73b234fb039b0",
+    "url": "/momenton-code-challenge/static/js/main.dc3acfdd.chunk.js"
   },
   {
     "revision": "322f05bebc1904a28b05",

@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/momenton-code-challenge/static/css/main.ae179a33.chunk.css",
-    "main.js": "/momenton-code-challenge/static/js/main.0129f96a.chunk.js",
-    "main.js.map": "/momenton-code-challenge/static/js/main.0129f96a.chunk.js.map",
+    "main.js": "/momenton-code-challenge/static/js/main.dc3acfdd.chunk.js",
+    "main.js.map": "/momenton-code-challenge/static/js/main.dc3acfdd.chunk.js.map",
     "runtime-main.js": "/momenton-code-challenge/static/js/runtime-main.51df7ada.js",
     "runtime-main.js.map": "/momenton-code-challenge/static/js/runtime-main.51df7ada.js.map",
     "static/js/2.d4ad94f8.chunk.js": "/momenton-code-challenge/static/js/2.d4ad94f8.chunk.js",
     "static/js/2.d4ad94f8.chunk.js.map": "/momenton-code-challenge/static/js/2.d4ad94f8.chunk.js.map",
     "index.html": "/momenton-code-challenge/index.html",
-    "precache-manifest.efad5334b165f559a1a47d7a523b1010.js": "/momenton-code-challenge/precache-manifest.efad5334b165f559a1a47d7a523b1010.js",
+    "precache-manifest.54a5dad1e1d796202313eba6621c415f.js": "/momenton-code-challenge/precache-manifest.54a5dad1e1d796202313eba6621c415f.js",
     "service-worker.js": "/momenton-code-challenge/service-worker.js",
     "static/css/main.ae179a33.chunk.css.map": "/momenton-code-challenge/static/css/main.ae179a33.chunk.css.map",
     "static/media/logo.svg": "/momenton-code-challenge/static/media/logo.25bf045c.svg"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.51df7ada.js",
     "static/js/2.d4ad94f8.chunk.js",
     "static/css/main.ae179a33.chunk.css",
-    "static/js/main.0129f96a.chunk.js"
+    "static/js/main.dc3acfdd.chunk.js"
   ]
 }
