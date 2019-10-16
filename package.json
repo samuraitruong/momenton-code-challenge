@@ -2,11 +2,13 @@
   "name": "momenton",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://samuraitruong.github.io/momenton-code-challenge",
   "dependencies": {
     "@types/jest": "24.0.19",
     "@types/node": "12.7.12",
     "@types/react": "16.9.6",
     "@types/react-dom": "16.9.2",
+    "gh-pages": "^2.1.1",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-scripts": "3.2.0",
@@ -16,7 +18,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "npm run build && NODE_DEBUG=gh-pages gh-pages -d build --remote gh"
   },
   "eslintConfig": {
     "extends": "react-app"

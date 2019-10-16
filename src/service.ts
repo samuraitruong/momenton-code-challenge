@@ -5,7 +5,7 @@ export class EmployeeService {
      * Fetching sample data from static json file
      */
   async fetchData(file: string): Promise<IEmployee[]> {
-    const response = await fetch("/" + file);
+    const response = await fetch(file);
     const data = await response.json();
     return data as IEmployee[];
   }
