@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { EmployeeService } from "./service";
+import { EmployeeService } from "./EmployeeService";
 import { IEmployee, IHierarchyItem } from "./model";
 interface IEmployeeState {
   employees?: IEmployee[];
@@ -23,7 +23,6 @@ export default class Employee extends Component<{}, IEmployeeState> {
       const hierarchy = this.service.transform(employees);
       const maxDeep = this.service.findMaxDeep(hierarchy);
       this.setState({ employees, hierarchy, maxDeep, error: null }, () => {
-        console.log(this.state);
       });
     } catch (err) {
       this.setState({ error: err.toString(), hierarchy: null, employees: null });
@@ -44,7 +43,7 @@ export default class Employee extends Component<{}, IEmployeeState> {
     }
     return (
       <React.Fragment key={item.current.id}>
-        <tr>{columns}</tr>
+        <tr className="item-row">{columns}</tr>
         {item.children.map(x => this.renderItem(x, maxDeep, deep + 1))}
       </React.Fragment>
     );

@@ -1,4 +1,5 @@
 import { IEmployee, IHierarchyItem } from "./model";
+import { MESSAGES } from "./Constants";
 
 export class EmployeeService {
     /**
@@ -18,11 +19,14 @@ export class EmployeeService {
   transform(data: IEmployee[]): IHierarchyItem<IEmployee> {
     const employees = [...data];
     // CEO is employee with no manager, if there is more than 1 CEO, stop process with error as invalid data
-
+    // this code is not good for perfomance
     const ceo = employees.filter(x => !x.managerId);
+    if(ceo.length ===0 ) {
+      throw new Error(MESSAGES.NoCEOFound);
+    }
 
-    if (ceo && ceo.length > 1) {
-      throw new Error("Multiple employee has no manager");
+    if (ceo.length > 1) {
+      throw new Error(MESSAGES.MultipleCEOFound);
     }
 
     const dict: { [x: number]: IHierarchyItem<IEmployee> } = {};
@@ -30,6 +34,11 @@ export class EmployeeService {
     // Using dictionary to store reference data, this is fastest way to process data
     // With this method if there is an employee with invalid manager ID, it will automatically excluded from the Hierarchy , seem sample 4
     for (const item of employees) {
+      // Assume that if any data not have id is critical error, we will stop processing.
+      // item.id is null or undefined
+      if(!item.id || item.id === null) {
+        throw new Error(MESSAGES.EmployeeWithNoId);
+      }
       if (!dict[item.id]) {
         
         dict[item.id] = {
@@ -37,7 +46,8 @@ export class EmployeeService {
           children: []
         };
       } else {
-        // if we care about validate duplicate ID, we should implement it here by check dict[item.id].current  != null
+        // if we care about validate duplicate ID, we should implement it here by check dict[item.id].current  != null, lets not care about this case in this code challenge.
+        
         dict[item.id].current = item;
       }
 
