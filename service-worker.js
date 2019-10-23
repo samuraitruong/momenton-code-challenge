@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/momenton-code-challenge/precache-manifest.54a5dad1e1d796202313eba6621c415f.js"
+  "/momenton-code-challenge/precache-manifest.60a3119b5bd1b03ffabfedd87c2b40d9.js"
 );
 
 self.addEventListener('message', (event) => {
